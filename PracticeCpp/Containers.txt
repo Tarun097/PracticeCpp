@@ -1,0 +1,17 @@
+STL constists of 
+	1. Algorithms
+	2. Containers 
+	3. Iterators   (interface between alogrithm and containers)
+
+Containers are of following types:
+	1. Sequence containers (implemented using arrays and linked list)
+		ex: Array, vector, deque, list, forward_list
+
+	2. Associative containers (implemented using binary tree - so items in containers are always sorted)
+		ex: set, multiset, map, multimap
+			Always sorted, default criteria is <
+			No push_back(), push_front()
+
+
+	3. Unordered associative containers (implemented using hash)
+		ex: unordered_set, unordered_multiset, unordered_map, unordered_multimap
