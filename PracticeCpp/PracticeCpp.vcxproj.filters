@@ -13,27 +13,72 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
-    <Filter Include="Source Files\SequenceContainers">
+    <Filter Include="Source Files\Containers">
+      <UniqueIdentifier>{3e985529-eae3-4cb4-ae27-9af42af18730}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Containers\SequenceContainers">
       <UniqueIdentifier>{a0e8ed37-5c40-4460-a819-3f814a17f449}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Containers\AssociativeContainers">
+      <UniqueIdentifier>{f82b3d68-91cf-43ec-af3f-06f3a9feebce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Containers\UnorderedAssociativeContainers">
+      <UniqueIdentifier>{084c035a-dc40-4735-980c-3028cc83d7b5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Iterators">
+      <UniqueIdentifier>{5d22d945-23f2-476d-afa6-716fc05568cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\General">
+      <UniqueIdentifier>{5fe678f8-347e-49f1-b8d3-8a3215ee80df}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="deque.cpp">
-      <Filter>Source Files\SequenceContainers</Filter>
+      <Filter>Source Files\Containers\SequenceContainers</Filter>
     </ClCompile>
     <ClCompile Include="list.cpp">
-      <Filter>Source Files\SequenceContainers</Filter>
+      <Filter>Source Files\Containers\SequenceContainers</Filter>
     </ClCompile>
     <ClCompile Include="Template.cpp">
-      <Filter>Source Files\SequenceContainers</Filter>
+      <Filter>Source Files\Containers\SequenceContainers</Filter>
     </ClCompile>
     <ClCompile Include="Vectors.cpp">
-      <Filter>Source Files\SequenceContainers</Filter>
+      <Filter>Source Files\Containers\SequenceContainers</Filter>
+    </ClCompile>
+    <ClCompile Include="Set.cpp">
+      <Filter>Source Files\Containers\AssociativeContainers</Filter>
+    </ClCompile>
+    <ClCompile Include="multiset.cpp">
+      <Filter>Source Files\Containers\AssociativeContainers</Filter>
+    </ClCompile>
+    <ClCompile Include="map.cpp">
+      <Filter>Source Files\Containers\AssociativeContainers</Filter>
+    </ClCompile>
+    <ClCompile Include="multimap.cpp">
+      <Filter>Source Files\Containers\AssociativeContainers</Filter>
+    </ClCompile>
+    <ClCompile Include="Algorithms.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
+    <ClCompile Include="unordered_set.cpp">
+      <Filter>Source Files\Containers\UnorderedAssociativeContainers</Filter>
+    </ClCompile>
+    <ClCompile Include="unordered_multiset.cpp">
+      <Filter>Source Files\Containers\UnorderedAssociativeContainers</Filter>
+    </ClCompile>
+    <ClCompile Include="unordered_map.cpp">
+      <Filter>Source Files\Containers\UnorderedAssociativeContainers</Filter>
+    </ClCompile>
+    <ClCompile Include="unordered_multimap.cpp">
+      <Filter>Source Files\Containers\UnorderedAssociativeContainers</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Containers.txt">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\Containers</Filter>
+    </Text>
+    <Text Include="Iterators.txt">
+      <Filter>Source Files\Iterators</Filter>
     </Text>
   </ItemGroup>
 </Project>

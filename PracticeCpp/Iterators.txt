@@ -1,0 +1,10 @@
+An iterator is an object (like a pointer) that points to an element inside the container.
+Iterators play a critical role in connecting algorithm with containers.
+All iterators do not have similar functionality as that of pointers
+
+Depending upon the functionality of iterators they can be classified into five categories.
+	1. Input iterators
+	2. Output iterators
+	3. Forward iterators
+	4. Bidirectional iterators
+	5. Random Access iterators

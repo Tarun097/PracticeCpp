@@ -7,11 +7,41 @@ Containers are of following types:
 	1. Sequence containers (implemented using arrays and linked list)
 		ex: Array, vector, deque, list, forward_list
 
+		These containers don't have find() as it takes O(n)
+		Data is arranged in sequential manner , so Sequence Containers
+
 	2. Associative containers (implemented using binary tree - so items in containers are always sorted)
 		ex: set, multiset, map, multimap
 			Always sorted, default criteria is <
-			No push_back(), push_front()
+			No push_back(), push_front() as elemets are sorted and such functions will break the order
+
+			Called associative because of map : key is "associated" with value, 
+			                                    for set (value itself is key) value of element identifies it and each value must be unique
+
+			These have find() : takes O(log(n))
+			Have erase() by value too
+
+			set\multiset elements are read-only , cannot be modified- can be added or delete
+			*itr = 10; //not allowed as this may corrupt the order
+
+			set\multiset properties :
+				fast search : O(log(n))
+				traversing is slow compared to  vector and deque
+				No random access , no [] operator
+				elements are sorted according to value of element (value acts as key here)
+
+			map\multimap properties:
+				elements are sorted by keys
+
 
 
 	3. Unordered associative containers (implemented using hash)
 		ex: unordered_set, unordered_multiset, unordered_map, unordered_multimap
+
+		Properties of unordered containers :
+			1. Fastest search\insert at any place : O(1)
+				Associative containers take O(log(n))
+				vectors, deque takes O(n)
+				list take O(1) to insert, O(n) to search
+			2. Unordered set\multiset : element value cannot be changed
+			   Unordered map\multimap : element key cannot be changed

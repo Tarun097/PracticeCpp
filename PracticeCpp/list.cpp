@@ -31,7 +31,6 @@ int main(int argc, char* argv[])
 	std::list<int>::iterator itr = std::find(myList.begin(), myList.end(), 1);
 	myList.insert(itr, 1);
 
-	
 	for(auto i : myList)
 	{
 		std::cout << i << std::endl;
