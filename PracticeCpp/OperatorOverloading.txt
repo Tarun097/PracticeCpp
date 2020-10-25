@@ -1,0 +1,9 @@
+
+Operators which cannot be overloaded.
+
+"."      -	Member access or dot operator
+“?:”     -	Ternary or conditional operator
+“::”     -	Scope resolution operator
+“.*”     -	Pointer to member operator
+“sizeof” -	The object size operator
+“typeid” -	Object type operator

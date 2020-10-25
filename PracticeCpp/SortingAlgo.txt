@@ -1,0 +1,22 @@
+Sorting algorithms :
+
+	1. Bubble Sort
+	2. Insertion Sort
+	3. Selection Sort
+	4. Quick sort
+	5. Merge Sort
+	6. Heap Sort
+	7. Counting Sort
+	8. Radix Sort
+
+Classification of Sorting Algorithms :
+	1. Based on Time Complexity 
+				- rate of growth of time w.r.t input size
+	2. Space Compelxity
+				- In place, constant space
+				- Memory grows with input size . ex : merge sort uses extra memory to temporarily store data and it grows with input size
+	3. Stablity 
+				-Sorting algorithm preserves the order after sort for same property on which sorting is performed
+	4. Recursive vs Non-recursive
+				- Merge & Quick sort are recursive
+				- insertion and selection sort are non-recursive

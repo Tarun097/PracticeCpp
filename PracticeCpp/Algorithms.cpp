@@ -18,6 +18,20 @@ int main(int argc, char* argv[])
 	{
 		std::cout << i << " ";
 	}
+
+	std::cout << "\nEven numbers \n";
+	std::vector<int> vec{ 1,2,3,4,5,6,7,8,9 };
+	std::vector<int> even_numbers;
+
+	std::transform(vec.begin(), vec.end(), //source
+		std::back_inserter(even_numbers), //destination
+		[](int x) {return (x % 2) == 0; });
+
+	for(int i : even_numbers)
+	{
+		std::cout << i << " ";
+	}
+	
 }
 
 

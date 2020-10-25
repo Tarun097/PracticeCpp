@@ -31,6 +31,12 @@
     <Filter Include="Source Files\General">
       <UniqueIdentifier>{5fe678f8-347e-49f1-b8d3-8a3215ee80df}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Source Files\Functors">
+      <UniqueIdentifier>{4306b16b-3239-4498-9f8d-55fa8471ad4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\SortingAlgorithms">
+      <UniqueIdentifier>{a3af4c55-46f6-4c11-819e-d3db87c34599}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="deque.cpp">
@@ -72,6 +78,24 @@
     <ClCompile Include="unordered_multimap.cpp">
       <Filter>Source Files\Containers\UnorderedAssociativeContainers</Filter>
     </ClCompile>
+    <ClCompile Include="Functor.cpp">
+      <Filter>Source Files\Functors</Filter>
+    </ClCompile>
+    <ClCompile Include="SelectionSort.cpp">
+      <Filter>Source Files\SortingAlgorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="BubbleSort.cpp">
+      <Filter>Source Files\SortingAlgorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="InsertionSort.cpp">
+      <Filter>Source Files\SortingAlgorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="MergeSort.cpp">
+      <Filter>Source Files\SortingAlgorithms</Filter>
+    </ClCompile>
+    <ClCompile Include="QuickSort.cpp">
+      <Filter>Source Files\SortingAlgorithms</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Containers.txt">
@@ -79,6 +103,12 @@
     </Text>
     <Text Include="Iterators.txt">
       <Filter>Source Files\Iterators</Filter>
+    </Text>
+    <Text Include="SortingAlgo.txt">
+      <Filter>Source Files\SortingAlgorithms</Filter>
+    </Text>
+    <Text Include="OperatorOverloading.txt">
+      <Filter>Source Files\General</Filter>
     </Text>
   </ItemGroup>
 </Project>
