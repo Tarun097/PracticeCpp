@@ -1,0 +1,13 @@
+Member and Non-Member Begin and End
+
+Member :
+1. v.begin(), v.end()
+2. Available for all collections in the library including vectory, string, map
+
+Non-Member :
+1. begin(v), end(v)
+2. Calls v.begin() and v.end() if it exists
+3. Works for C-Style arrays too
+4. You can write a free function for a collection without member begin() and end()
+5. The safest choice and good habit
+

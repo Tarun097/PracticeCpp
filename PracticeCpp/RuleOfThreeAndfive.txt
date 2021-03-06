@@ -1,0 +1,26 @@
+When you choose to manage the memory yourself you should follow the so-called Rule of Three.
+This rule states that if your class defines one or more of the following methods it should probably explicitly define all three:
+
+	- destructor
+	- copy constructor
+	- copy assignment operator
+
+Copy constructor is used to create a new object from another existing object.
+
+	Holder h1(10000); // regular constructor
+	Holder h2 = h1;   // copy constructor
+	Holder h3(h1);    // copy constructor (alternate syntax)
+
+Assignment operator, used to replace an existing object with another existing object.
+
+	Holder h1(10000);  // regular constructor
+	Holder h2(60000);  // regular constructor
+	h1 = h2;           // assignment operator
+
+
+Rule of Five :
+It's an extension to the Rule of Three seen before.
+It states that any class for which move semantics are desirable, has to declare two additional member functions:
+
+	- move constructor — to construct new objects by stealing data from temporaries
+	- move assignment operator — to replace existing objects by stealing data from temporaries

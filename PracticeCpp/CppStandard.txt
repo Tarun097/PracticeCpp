@@ -1,0 +1,64 @@
+- Modern C++ is readable and simple
+- Use the full power of the language and library
+- Emphasize expressing your intent and minimizing your effort
+- Very different from "C with Classes" style C++
+
+
+
+C++ 11
+	- Move semantics and rvalues
+	- auto
+	- range-based for
+	- lambdas
+	- Scoped enums (enum classes)
+	- Variadic templates
+	- Defaulted and deleted functions
+	- Tuple
+	- Smart pointers
+
+C++ 14
+	- Generic lambdas
+	- Capture expressions in lambdas
+	- Standard user defined literals
+
+
+C++ 17
+	- Structured bindings
+	- if initializers
+	- Class template argument deduction
+	- string_view
+	- optional
+	- Parallel algorithms
+	- Class template argument deduction (CTAD)
+			https://en.cppreference.com/w/cpp/language/class_template_argument_deduction
+
+
+Rule of 3:
+	If you write a destructor, copy-constructor or assignment operator, WRITE ALL THREE
+
+
+Rule of 5:
+	Add move constructor and move assignment operator to those three
+
+Rule of 0:
+	Use member variables that manage themselves (eg vector, unique_ptr) and write nothing
+
+
+Exceptions :
+	1. Wrap code that might throw in a try block
+		- as small as possible
+	2. Add one or more catch blocks after the try
+	3. Catch more specific exceptions first
+	4. Catch exceptions by reference
+		- Great for catching a derived exception
+		- Catching by value will cause slicing
+	5. No finally
+		- That cleanup code belongs in a destructor
+		- Destructors run no matter how control leaves the block
+	6. C++ allows you to throw and catch anything (not a good practice)
+		- int, string, instance of a class
+		- So to deal with this , standard library includes an exception class
+		- It is base class to a hierarchy of exceptions
+		- Uses classes derived from it when you need to throw
+		- Use these exceptions yourself
+		- Or derive your exceptions from them

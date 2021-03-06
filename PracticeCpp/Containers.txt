@@ -6,6 +6,7 @@ STL constists of
 Containers are of following types:
 	1. Sequence containers (implemented using arrays and linked list)
 		ex: Array, vector, deque, list, forward_list
+		Array - if the collection never grows or shrinks
 
 		These containers don't have find() as it takes O(n)
 		Data is arranged in sequential manner , so Sequence Containers

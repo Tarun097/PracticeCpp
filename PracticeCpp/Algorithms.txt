@@ -1,0 +1,33 @@
+Headers you should know
+
+<algorithm>
+<vector> <array> <list> <stack> <map> <queue>
+<string>
+<iterator>
+<utility> <tuple>
+<numeric>
+<complex> <cmath>
+<regex> <chrono>
+<memory> - for smart pointers
+<functional> - if you want to put method in variable and pass to collections
+
+
+Algorithms :
+	- Work on any container ( no matter what it contains )
+	- They don't have to work on entire container, algorithms can just work on range (a part of container)
+	- Typically work through iterators
+	- Live in their own hear file <algorithm>, unless you include this hearder file you won't be able to use. They are not member functions of containers
+
+
+Member or Nonmember Begin and End
+
+Member :
+	- v.begin(), v.end()
+	- Available for all collections in the library including vector, string, map
+
+Non-Member 
+	- begin(v), end(v)
+	- Calls v.begin() or v.end() if it exists
+	- Works for C-Style arrays too
+	- You can write a free function for a collection without member begin() and end()
+	- The safest choice and a good habit

@@ -96,6 +96,12 @@
     <ClCompile Include="QuickSort.cpp">
       <Filter>Source Files\SortingAlgorithms</Filter>
     </ClCompile>
+    <ClCompile Include="MoveSemanticsBasics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Count.cpp">
+      <Filter>Source Files\General</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Containers.txt">
@@ -108,6 +114,18 @@
       <Filter>Source Files\SortingAlgorithms</Filter>
     </Text>
     <Text Include="OperatorOverloading.txt">
+      <Filter>Source Files\General</Filter>
+    </Text>
+    <Text Include="CppStandard.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="RuleOfThreeAndfive.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="Algorithms.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="BeginAndEnd.txt">
       <Filter>Source Files\General</Filter>
     </Text>
   </ItemGroup>
